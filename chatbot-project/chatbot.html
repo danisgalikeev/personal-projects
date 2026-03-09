@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React Basics</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .loading-img {
+            height: 40px;
+            margin: -15px;
+        }
+        .send-button {
+            background-color: rgb(25,135,84);
+            color: white;
+            padding: 12px 20px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .chat-input {
+            padding:12px 15px;
+            border-radius: 10px;
+            border-width: 1px;
+            font-size: 15px;
+            flex-grow: 1;
+        }
+        .chat-input-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .app-container {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-message-user {
+            display: flex;
+            justify-content: end;
+            align-items: start;
+        }
+        .chat-message-text {
+            background-color: rgb(238,238,238);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+        .chat-message-robot {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        .chat-message-profile {
+            width:  45px;
+        }
+        .chat-messages-container {
+            flex-grow: 1;
+            margin-top: 20px;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+        .chat-message-system {
+            text-align: center;
+            font-size: 13px;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+<div class="js-container"></div>
+
+
+
+
+<script src="https://unpkg.com/supersimpledev/react.js"></script>
+<script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+<script src="https://unpkg.com/supersimpledev/chatbot.js"></script>
+<script src="https://unpkg.com/supersimpledev/babel.js"></script>
+<script type="text/babel">
+
+
+    {/*внизу это компонент*/}
+
+    //это компонент внизу
+
+
+
+
+    const container = document.querySelector('.js-container');
+    ReactDOM.createRoot(container).render(<App />);
+</script>
+</body>
+</html>

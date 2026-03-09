@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Weather Snap</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="app">
+    <header class="header">
+        <div class="brand">
+            <h1 class="title">City Weather Snap</h1>
+            <p class="subtitle">Pick a city and pull the latest conditions.</p>
+        </div>
+
+        <div class="controls">
+            <select id="city-select" aria-label="Choose a city">
+                <option value=""></option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="london">London</option>
+            </select>
+
+            <button id="get-weather-btn" type="button">Get weather</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="card weather" id="weather-card">
+            <div class="icon-wrap">
+                <img id="weather-icon" alt="Weather icon" />
+            </div>
+
+            <div class="info">
+                <div class="topline">
+                    <div>
+                        <div id="location">—</div>
+                        <div id="weather-main">—</div>
+                    </div>
+                    <div id="main-temperature">—</div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="label">Feels like</div>
+                        <div class="value" id="feels-like">—</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="label">Humidity</div>
+                        <div class="value" id="humidity">—</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="label">Wind</div>
+                        <div class="value" id="wind">—</div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="label">Wind gust</div>
+                        <div class="value" id="wind-gust">—</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="./script.js" defer></script>
+</body>
+</html>

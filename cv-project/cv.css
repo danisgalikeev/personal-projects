@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Open Sans, serif;
+}
+.main-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.cv-container {
+    width: 650px;
+    height: 100vh;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+}
+.divider {
+    background-color: black;
+    height: 3px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 80%;
+}
+.title {
+    font-size: 25px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.subtitle {
+    color: #3baf3b;
+}
+.subtitle-detail {
+    color: #1372cf;
+    font-size: 18px;
+}

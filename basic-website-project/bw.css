@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+}
+.logo {
+    flex: 1;
+    padding: 20px;
+}
+.title-my {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+
+}
+.divider {
+    width: 100%;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: #050404;
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+
+
+}
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.education {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+
+}
+.reviews-section {
+    padding: 50px;
+}
+.reviews {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.review-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 260px;
+    line-height: 30px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: #050404;
+}
+.about-me-details {
+    margin-top: -20px;
+    color: #605f5f;
+
+}
+a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+a {
+    text-decoration: underline dotted;
+}
+.mini-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.clickable-column {
+    padding: 7px;
+}
+.working {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    min-width: 300px;
+
+}
+.teacher-name {
+    color: #605f5f;
+}
+footer {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: auto;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    row-gap: 7px;
+    height: 100vh
+}
+.projects-section {
+    display: flex;
+    padding:20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 17px;
+    height: 100vh;
+}
+.projects-container {
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    text-decoration: underline dotted;
+}
+.projects-container:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.articles-section {
+    display: flex;
+    min-height: 100vh;
+    padding:20px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.articles-container {
+    width: 100%;
+}
+.article-header {
+    font-size: 40px;
+}
+p {
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.working {
+    min-width: 0;
+}
+
+.article-text {
+    text-wrap: wrap;
+    white-space: wrap;
+    word-break: break-all;
+}
+
+@media only screen and (max-width: 500px) {
+    header, .nav-links {
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    .content-container, .reviews {
+        flex-direction: column;
+        padding: 15px;
+        row-gap: 20px;
+    }
+
+}

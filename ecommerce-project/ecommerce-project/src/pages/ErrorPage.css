@@ -1,0 +1,15 @@
+/* Под main отводим место под фиксированный Header */
+.error-page {
+    margin-top: 70px; /* подставь высоту Header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* чтобы заняло всю оставшуюся высоту экрана */
+    text-align: center;
+}
+
+.error-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}

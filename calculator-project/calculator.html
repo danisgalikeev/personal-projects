@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+    <h3>Calculator Project</h3>
+    <p class="cals"></p>
+    <p>
+        <button class="num" onClick="updateCalculation(1)">1</button>
+        <button class="num" onClick="updateCalculation(2)">2</button>
+        <button class="num" onClick="updateCalculation(3)">3</button>
+        <button class="op" onClick="updateCalculation(' + ')">+</button>
+    </p>
+    <p>
+        <button class="num" onClick="updateCalculation(4)">4</button>
+        <button class="num" onClick="updateCalculation(5)">5</button>
+        <button class="num" onClick="updateCalculation(6)">6</button>
+        <button class="op" onClick="updateCalculation(' - ')">-</button>
+    </p>
+    <p>
+        <button class="num" onClick="updateCalculation(7)">7</button>
+        <button class="num" onClick="updateCalculation(8)">8</button>
+        <button class="num" onClick="updateCalculation(9)">9</button>
+        <button class="op" onClick="updateCalculation(' / ')">/</button>
+
+    </p>
+    <p>
+
+
+
+        <button class="op" onClick="updateCalculation(' * ')">*</button>
+        <button class="op" onClick="calculation = eval(calculation); show();">=</button>
+        <button class="num" onClick="clearCalculation()">Clear</button>
+    </p>
+
+
+    <script src="cals.js">
+    </script>
+    </body>
+</html>
